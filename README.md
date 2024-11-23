@@ -59,7 +59,7 @@ Run the program with the desired mode of operation:
 
 ### Example
 ```bash
-./genetic_algorithm 1
+./main 1
 ```
 The program benchmarks the execution time for serial and parallel implementations using 1, 2, 4, and maximum available threads.
 
@@ -103,9 +103,10 @@ The following parameters can be adjusted in `common.h`:
 - `MUTATION_RATE`: Probability of mutation (default: 0.1).
 
 ## Contributors
-
- - **Fiordi Toska** -Project Developer
+- **Fiordi Toska** - Project Developer
 
 ## License
+This project is licensed under the [MIT License](LICENSE.txt).
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+---
+Feel free to contribute or report issues. Happy coding!
