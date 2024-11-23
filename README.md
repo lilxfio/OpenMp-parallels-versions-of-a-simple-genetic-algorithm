@@ -43,14 +43,14 @@ The goal of this project is to explore different strategies for implementing a p
    ```
 2. Compile the project:
    ```bash
-   gcc -fopenmp -o genetic_algorithm main.c shared_population.c independent_population.c exchange_population.c common.c calculate_speedup.c
+   gcc -o main *.c -fopenmp
    ```
 
 ## Usage
 
 Run the program with the desired mode of operation:
 ```bash
-./genetic_algorithm [MODE]
+./main [MODE]
 ```
 - **MODE**:
   - `1`: Shared Population.
@@ -104,7 +104,7 @@ The following parameters can be adjusted in `common.h`:
 
 ## Contributors
 
-- [Your Name](https://github.com/your-profile)
+ - **Fiordi Toska** -Project Developer
 
 ## License
 
