@@ -1,0 +1,1 @@
+# OpenMp-parallels-versions-of-a-simple-genetic-algorithm
