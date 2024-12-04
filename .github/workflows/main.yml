@@ -26,7 +26,7 @@ jobs:
       # Build the C program
       - name: Build the program
         run: |
-          gcc -o main *.c -fopenmp
+          gcc -o main src/*.c -fopenmp
 
       # Run the program
       - name: Run the program
