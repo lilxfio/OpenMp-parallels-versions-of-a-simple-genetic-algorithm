@@ -31,4 +31,3 @@ jobs:
       # Run the program
       - name: Run the program
         run: ./main
-
