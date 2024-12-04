@@ -30,4 +30,4 @@ jobs:
 
       # Run the program
       - name: Run the program
-        run: ./main 1
+        run: ./main 
