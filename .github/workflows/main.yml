@@ -28,6 +28,14 @@ jobs:
         run: |
           gcc -o main src/*.c -fopenmp
 
-      # Run the program
-      - name: Run the program
-        run: ./main 
+      # Run the program with argument 1
+      - name: Run with argument 1
+        run: ./main 1
+
+      # Run the program with argument 2
+      - name: Run with argument 2
+        run: ./main 2
+
+      # Run the program with argument 3
+      - name: Run with argument 3
+        run: ./main 3
