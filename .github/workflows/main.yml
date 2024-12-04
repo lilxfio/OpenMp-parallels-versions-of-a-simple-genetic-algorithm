@@ -1,5 +1,4 @@
-
-name: I_E_S_Population
+name: Build and Run
 
 on:
   push:
@@ -10,26 +9,26 @@ on:
       - main
 
 jobs:
-  build-and-run:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout the repository
-    - name: Checkout code
-      uses: actions/checkout@v3
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    # Step 2: Set up GCC
-    - name: Install GCC
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y gcc
-    # Step 3: Build the program
-    - name: Build the matrix operations program
-      run: |
-        gcc -o main *.c -fopenmp 
-    # Step 4: Run the program
-    - name: Execute the program
-      run: |
-        ./main 1
-        ./main 2
-        ./main 3
+      # Install GCC and OpenMP
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc
+
+      # Build the C program
+      - name: Build the program
+        run: |
+          gcc -o main *.c -fopenmp
+
+      # Run the program
+      - name: Run the program
+        run: ./main
+
