@@ -104,7 +104,8 @@ The following parameters can be adjusted in `common.h`:
 
 ## Contributors
 
-- [Your Name](https://github.com/your-profile)
+- **Fiordi Toska** - Project Developer
+- Contributions welcome! Feel free to submit a pull request or raise an issue.
 
 ## License
 
